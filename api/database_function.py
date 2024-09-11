@@ -14,7 +14,7 @@ app = FastAPI()
 logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
 
-EMAIL_FUNCTION_URL = os.environ.get("EMAIL_FUNCTION_URL")
+EMAIL_FUNCTION_URL = "https://used-car-scraper-vercel.vercel.database.app/api/email"#os.environ.get("EMAIL_FUNCTION_URL")
 
 print(f"DEBUG: EMAIL_FUNCTION_URL = {EMAIL_FUNCTION_URL}")
 
